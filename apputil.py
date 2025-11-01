@@ -2,6 +2,8 @@ import pandas as pd
 
 class GroupEstimate:
     def __init__(self, estimate):
+        if estimate not in ["mean", "median"]:
+            raise ValueError("estimate must be either 'mean' or 'median'")
         self.estimate = estimate
         self.group_estimates = None
         self.default_estimates = None
