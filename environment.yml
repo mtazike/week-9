@@ -1,0 +1,12 @@
+name: h501-week-9
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - pandas
+    - python-dotenv
+    - streamlit
+    - boto3
+    - ipykernel
+    - vaderSentiment
+    - plotly
